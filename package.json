@@ -1,0 +1,19 @@
+{
+  "name": "webauth-i-challenge",
+  "version": "1.0.0",
+  "description": "WebAuth 1 Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelodyRackham/webauth-i-challenge.git"
+  },
+  "author": "melody.rackham@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MelodyRackham/webauth-i-challenge/issues"
+  },
+  "homepage": "https://github.com/MelodyRackham/webauth-i-challenge#readme"
+}
