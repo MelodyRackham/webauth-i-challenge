@@ -7,8 +7,8 @@ const Users = require('../users/users-model');
 router.post('/register', (req, res) => {
   let userInfo = req.body;
 
-  bcrypt.hash(userInfo.password, 12, (err, hashedPasswod) => {
-    userInfo.password = hashedPasswod;
+  bcrypt.hash(userInfo.password, 12, (err, hashedPassword) => {
+    userInfo.password = hashedPassword;
 
     Users.add(userInfo)
       .then(saved => {
@@ -34,6 +34,7 @@ router.post('/login', (req, res) => {
       }
     })
     .catch(error => {
+      console.log(error);
       res.status(500).json(error);
     });
 });
