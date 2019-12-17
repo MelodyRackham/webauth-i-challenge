@@ -7,6 +7,8 @@ const server = express();
 
 configureMiddleware(server);
 
+// server.use(express.json());
+
 server.use('/api', apiRouter);
 
 module.exports = server;
