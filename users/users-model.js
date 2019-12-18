@@ -12,9 +12,11 @@ function find() {
 }
 
 function findBy(filter) {
-  return db('users')
-    .select('id', 'username')
-    .where(filter);
+  return (
+    db('users')
+      // .select('id', 'username')
+      .where(filter)
+  );
 }
 
 function add(user) {
@@ -27,8 +29,10 @@ function add(user) {
 }
 
 function findById(id) {
-  return db('users')
-    .select('id', 'username')
-    .where({ id })
-    .first();
+  return (
+    db('users')
+      // .select('id', 'username')
+      .where({ id })
+      .first()
+  );
 }
